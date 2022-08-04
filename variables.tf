@@ -1,11 +1,18 @@
 // Copyright (c) 2018, Oracle and/or its affiliates. All rights reserved.
 
+variable "tenancy_ocid" {
+  default = null
+}
+variable "region" {
+  default = null
+}
 variable "compartment_ocid" {
   description = "Compartment's OCID where VCN will be created. "
 }
 
 variable "vcn_display_name" {
-  description = "Name of Virtual Cloud Network. "
+  description = "Name of Virtual Cloud Network."
+  default = "defautVCN"
 }
 
 variable "vcn_cidr" {
